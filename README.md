@@ -64,8 +64,10 @@
 ### 13. POST/GET `/api/globalVar/getVar/`
 - **Description**: Retrieves a server sided variable with stored information inside.
 - **Parameters**:
-  - `privateKey` (required): The private key given upon registering
+  - `privateKey`: The private key given upon registering
+  - `publicKey`: The public key given upon registering
   - `id` (required): The ID of the target variable you want to retrieve.
+  - **Note**: At least one `publicKey` or `privateKey` must be provided.
 ### 14. POST/GET `/api/globalVar/setVar/`
 - **Description**: Sets the object stored in a target variable.
 - **Parameters**:
@@ -85,8 +87,8 @@
 ### 17. POST/GET `/api/redeemKey/`
 - **Description**: Redeems a target key (Links to discord account).
 - **Parameters**:
-  - `privateKey` (required): The private key given upon registering
-  - `publicKey` (required): The private key given upon registering
+  - `privateKey`: The private key given upon registering
+  - `publicKey`: The public key given upon registering
   - `key` (required): The target key you want to link to the given ID.
   - `id` (required): The target discord userID you want to link to the given key.
   - **Note**: At least one `publicKey` or `privateKey` must be provided.
