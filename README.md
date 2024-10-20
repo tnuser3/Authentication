@@ -89,6 +89,12 @@
 - **Parameters**:
   - `privateKey` (required): The private key given upon registering
   - `session` (required): The id of the target session.
+### 17. POST/GET `/api/nonce/validateSession/`
+- **Description**: Validates a target session.
+- **Parameters**:
+  - `privateKey` (required): The private key given upon registering
+  - `session` (required): The id of the target session.
+  - `key` (required): The key the target session is linked to.
 ### 18. POST/GET `/api/redeemKey/`
 - **Description**: Redeems a target key (Links to discord account).
 - **Parameters**:
